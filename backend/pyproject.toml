@@ -9,6 +9,7 @@ dependencies = [
     "uvicorn>=0.25.0",
     "fastapi-sso>=0.13.0",
     "boto3>=1.34.67",
+    "g4f",
 ]
 name = "openui"
 version = "0.2"
