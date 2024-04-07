@@ -65,7 +65,8 @@ app = FastAPI(
     description="API for proxying LLM requests to different services",
 )
 
-openai = AsyncOpenAI()
+#openai = AsyncOpenAI()
+openai = AsyncOpenAI(base_url="http://127.0.0.1:1337/v1") # AsyncOpenAI(base_url="http://127.0.0.1:1337/v1") for g4f
 ollama = AsyncClient()  # AsyncOpenAI(base_url="http://127.0.0.1:11434/v1")
 router = APIRouter()
 session_store = DBSessionStore()
